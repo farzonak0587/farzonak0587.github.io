@@ -68,20 +68,18 @@
     <h2>Reflection</h2>
 
     <h3>Challenges</h3>
-    <p></p>
-     <p></p>
+    <p>One of the biggest challenges I ran into while making the dodge game was getting collisions to work properly. At first, my player could move through the red blocks without anything happening, and the “Game Over” text never showed up. I realized that I hadn’t set up a collision area for the player or the blocks, so the game didn’t know when they were touching. To fix it, I learned about the area() function in Kaboom.js, which detects collisions and lets objects interact properly. I added the collision detection to both the player and the blocks, and suddenly the game started recognizing hits. It was actually just a single line of code, but it made all the difference and finally allowed the game to end correctly when the player got hit. I used my learning log and the Kaboom.js website to figure this out, which really helped me understand how collision detection works in games.</p>
+     <p>Another challenge I faced was trying to prevent players from reusing wrong answers in the quiz. At first, I tried storing all of the answers the player had submitted in an array and checking against it every time they typed a new answer. The problem with this approach was that it made the game way too hard and caused issues when the player first started, because the array assumed there were already answers stored. To fix it, I changed the variable that stored the last answer to null at the beginning of the game. This way, there was no stored answer when the game first started, and it didn’t accidentally block valid input. This solution was much simpler and made the game fairer, while still keeping players from repeating the same answers right away.</p>
+      
     <h3>Takeaways</h3>
     <ul>
-      <li><strong></strong> </li>
-      <li><strong></strong> </li>
-      <li><strong></strong> </li>
-      <li><strong></strong> </li>
-      <li><strong></strong></li>
-      <li><strong></strong> </li>
+      <li><strong>Patience</strong>Be patient when debugging because even small bugs can take a lot of time to figure out, but sticking with it usually leads to a solution. </li>
+      <li><strong>Resources</strong>Use notes or other resources to refresh your memory since JavaScript and the tools I used have a lot of concepts that are easy to forget. </li>
+      <li><strong>Flexibility</strong> Test different solutions instead of getting stuck on just one idea, because trying different approaches can help you find what actually works faster and more efficiently.</li>
     </ul>
 
     <h3>Next Steps</h3>
-    <p></p>
+    <p>For my next steps, I want to focus on improving the overall gameplay experience and making the project feel more complete. One thing I want to do is add more levels or rounds so the game lasts longer and gets progressively harder, which would make it more challenging and keep players engaged. Another next step is to improve the design and user experience by adding better visuals, animations, or sound effects to make the game feel more polished and less basic.</p>
   </section>
 
   <a href="https://github.com/farzonak0587/sep11-freedom-project/tree/main/blog">Link to my blogs</a><br>
